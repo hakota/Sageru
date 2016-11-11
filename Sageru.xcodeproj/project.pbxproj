@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9458B731DD15AE200596049 /* SageruTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9458B721DD15AE200596049 /* SageruTableCell.swift */; };
+		C9458B751DD1603600596049 /* SageruContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9458B741DD1603600596049 /* SageruContent.swift */; };
+		C953F6141DCE64BE00F2D4BA /* Sageru.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953F6131DCE64BE00F2D4BA /* Sageru.swift */; };
+		C953F6401DCE65E000F2D4BA /* Sageru_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953F63F1DCE65E000F2D4BA /* Sageru_SampleTests.swift */; };
+		C9D830DB1DCE643F0006B194 /* Sageru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D830D11DCE643E0006B194 /* Sageru.framework */; };
+		C9D830E01DCE643F0006B194 /* SageruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D830DF1DCE643F0006B194 /* SageruTests.swift */; };
+		C9D830E21DCE643F0006B194 /* Sageru.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D830D41DCE643E0006B194 /* Sageru.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9E6CE9D1DCE67800099EA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE8D1DCE67800099EA80 /* AppDelegate.swift */; };
+		C9E6CE9E1DCE67800099EA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E6CE8E1DCE67800099EA80 /* Assets.xcassets */; };
+		C9E6CEA11DCE67800099EA80 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE951DCE67800099EA80 /* FiveViewController.swift */; };
+		C9E6CEA21DCE67800099EA80 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE961DCE67800099EA80 /* FourViewController.swift */; };
+		C9E6CEA31DCE67800099EA80 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE971DCE67800099EA80 /* OneViewController.swift */; };
+		C9E6CEA41DCE67800099EA80 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE981DCE67800099EA80 /* ThreeViewController.swift */; };
+		C9E6CEA51DCE67800099EA80 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE991DCE67800099EA80 /* TwoViewController.swift */; };
+		C9E6CEA61DCE67800099EA80 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9E6CE9A1DCE67800099EA80 /* Info.plist */; };
+		C9E6CEA71DCE67800099EA80 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE9B1DCE67800099EA80 /* NavigationController.swift */; };
+		C9E6CEA81DCE67800099EA80 /* ViewController+setMenuAndTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6CE9C1DCE67800099EA80 /* ViewController+setMenuAndTitle.swift */; };
+		C9E6CEAD1DCE679C0099EA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E6CEA91DCE679C0099EA80 /* LaunchScreen.storyboard */; };
+		C9E6CEAE1DCE679C0099EA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E6CEAB1DCE679C0099EA80 /* Main.storyboard */; };
+		C9E6CEAF1DCE68960099EA80 /* Sageru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D830D11DCE643E0006B194 /* Sageru.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C9E6CEB01DCE68960099EA80 /* Sageru.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9D830D11DCE643E0006B194 /* Sageru.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C953F63C1DCE65E000F2D4BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9D830C81DCE643E0006B194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C953F6271DCE65DF00F2D4BA;
+			remoteInfo = "Sageru-Sample";
+		};
+		C9D830DC1DCE643F0006B194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9D830C81DCE643E0006B194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9D830D01DCE643E0006B194;
+			remoteInfo = Sageru;
+		};
+		C9E6CEB11DCE68960099EA80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9D830C81DCE643E0006B194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9D830D01DCE643E0006B194;
+			remoteInfo = Sageru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9E6CEB31DCE68960099EA80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9E6CEB01DCE68960099EA80 /* Sageru.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C9458B721DD15AE200596049 /* SageruTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SageruTableCell.swift; sourceTree = "<group>"; };
+		C9458B741DD1603600596049 /* SageruContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SageruContent.swift; sourceTree = "<group>"; };
+		C953F6131DCE64BE00F2D4BA /* Sageru.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sageru.swift; sourceTree = "<group>"; };
+		C953F6281DCE65DF00F2D4BA /* Sageru-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sageru-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C953F63B1DCE65E000F2D4BA /* Sageru-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sageru-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C953F63F1DCE65E000F2D4BA /* Sageru_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sageru_SampleTests.swift; sourceTree = "<group>"; };
+		C953F6411DCE65E000F2D4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D830D11DCE643E0006B194 /* Sageru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sageru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D830D41DCE643E0006B194 /* Sageru.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sageru.h; sourceTree = "<group>"; };
+		C9D830D51DCE643E0006B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D830DA1DCE643F0006B194 /* SageruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SageruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D830DF1DCE643F0006B194 /* SageruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SageruTests.swift; sourceTree = "<group>"; };
+		C9D830E11DCE643F0006B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E6CE8D1DCE67800099EA80 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9E6CE8E1DCE67800099EA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E6CE951DCE67800099EA80 /* FiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		C9E6CE961DCE67800099EA80 /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		C9E6CE971DCE67800099EA80 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		C9E6CE981DCE67800099EA80 /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		C9E6CE991DCE67800099EA80 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		C9E6CE9A1DCE67800099EA80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E6CE9B1DCE67800099EA80 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C9E6CE9C1DCE67800099EA80 /* ViewController+setMenuAndTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+setMenuAndTitle.swift"; sourceTree = "<group>"; };
+		C9E6CEAA1DCE679C0099EA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9E6CEAC1DCE679C0099EA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C953F6251DCE65DF00F2D4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E6CEAF1DCE68960099EA80 /* Sageru.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C953F6381DCE65E000F2D4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D830CD1DCE643E0006B194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D830D71DCE643F0006B194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D830DB1DCE643F0006B194 /* Sageru.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C953F6151DCE656B00F2D4BA /* Sageru-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6CE941DCE67800099EA80 /* Controllers */,
+				C9E6CE8D1DCE67800099EA80 /* AppDelegate.swift */,
+				C9E6CE9B1DCE67800099EA80 /* NavigationController.swift */,
+				C9E6CE9C1DCE67800099EA80 /* ViewController+setMenuAndTitle.swift */,
+				C9E6CE9A1DCE67800099EA80 /* Info.plist */,
+				C9E6CEA91DCE679C0099EA80 /* LaunchScreen.storyboard */,
+				C9E6CEAB1DCE679C0099EA80 /* Main.storyboard */,
+				C9E6CE8E1DCE67800099EA80 /* Assets.xcassets */,
+			);
+			path = "Sageru-Sample";
+			sourceTree = "<group>";
+		};
+		C953F63E1DCE65E000F2D4BA /* Sageru-SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C953F63F1DCE65E000F2D4BA /* Sageru_SampleTests.swift */,
+				C953F6411DCE65E000F2D4BA /* Info.plist */,
+			);
+			path = "Sageru-SampleTests";
+			sourceTree = "<group>";
+		};
+		C9D830C71DCE643E0006B194 = {
+			isa = PBXGroup;
+			children = (
+				C953F6151DCE656B00F2D4BA /* Sageru-Sample */,
+				C9D830D31DCE643E0006B194 /* Sageru */,
+				C9D830DE1DCE643F0006B194 /* SageruTests */,
+				C953F63E1DCE65E000F2D4BA /* Sageru-SampleTests */,
+				C9D830D21DCE643E0006B194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9D830D21DCE643E0006B194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9D830D11DCE643E0006B194 /* Sageru.framework */,
+				C9D830DA1DCE643F0006B194 /* SageruTests.xctest */,
+				C953F6281DCE65DF00F2D4BA /* Sageru-Sample.app */,
+				C953F63B1DCE65E000F2D4BA /* Sageru-SampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9D830D31DCE643E0006B194 /* Sageru */ = {
+			isa = PBXGroup;
+			children = (
+				C9D830D41DCE643E0006B194 /* Sageru.h */,
+				C9D830D51DCE643E0006B194 /* Info.plist */,
+				C953F6131DCE64BE00F2D4BA /* Sageru.swift */,
+				C9458B721DD15AE200596049 /* SageruTableCell.swift */,
+				C9458B741DD1603600596049 /* SageruContent.swift */,
+			);
+			path = Sageru;
+			sourceTree = "<group>";
+		};
+		C9D830DE1DCE643F0006B194 /* SageruTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9D830DF1DCE643F0006B194 /* SageruTests.swift */,
+				C9D830E11DCE643F0006B194 /* Info.plist */,
+			);
+			path = SageruTests;
+			sourceTree = "<group>";
+		};
+		C9E6CE941DCE67800099EA80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6CE951DCE67800099EA80 /* FiveViewController.swift */,
+				C9E6CE961DCE67800099EA80 /* FourViewController.swift */,
+				C9E6CE971DCE67800099EA80 /* OneViewController.swift */,
+				C9E6CE981DCE67800099EA80 /* ThreeViewController.swift */,
+				C9E6CE991DCE67800099EA80 /* TwoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9D830CE1DCE643E0006B194 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D830E21DCE643F0006B194 /* Sageru.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C953F6271DCE65DF00F2D4BA /* Sageru-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C953F64D1DCE65E000F2D4BA /* Build configuration list for PBXNativeTarget "Sageru-Sample" */;
+			buildPhases = (
+				C953F6241DCE65DF00F2D4BA /* Sources */,
+				C953F6251DCE65DF00F2D4BA /* Frameworks */,
+				C953F6261DCE65DF00F2D4BA /* Resources */,
+				C9E6CEB31DCE68960099EA80 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E6CEB21DCE68960099EA80 /* PBXTargetDependency */,
+			);
+			name = "Sageru-Sample";
+			productName = "Sageru-Sample";
+			productReference = C953F6281DCE65DF00F2D4BA /* Sageru-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C953F63A1DCE65E000F2D4BA /* Sageru-SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C953F6501DCE65E000F2D4BA /* Build configuration list for PBXNativeTarget "Sageru-SampleTests" */;
+			buildPhases = (
+				C953F6371DCE65E000F2D4BA /* Sources */,
+				C953F6381DCE65E000F2D4BA /* Frameworks */,
+				C953F6391DCE65E000F2D4BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C953F63D1DCE65E000F2D4BA /* PBXTargetDependency */,
+			);
+			name = "Sageru-SampleTests";
+			productName = "Sageru-SampleTests";
+			productReference = C953F63B1DCE65E000F2D4BA /* Sageru-SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9D830D01DCE643E0006B194 /* Sageru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D830E51DCE643F0006B194 /* Build configuration list for PBXNativeTarget "Sageru" */;
+			buildPhases = (
+				C9D830CC1DCE643E0006B194 /* Sources */,
+				C9D830CD1DCE643E0006B194 /* Frameworks */,
+				C9D830CE1DCE643E0006B194 /* Headers */,
+				C9D830CF1DCE643E0006B194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sageru;
+			productName = Sageru;
+			productReference = C9D830D11DCE643E0006B194 /* Sageru.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9D830D91DCE643F0006B194 /* SageruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D830E81DCE643F0006B194 /* Build configuration list for PBXNativeTarget "SageruTests" */;
+			buildPhases = (
+				C9D830D61DCE643F0006B194 /* Sources */,
+				C9D830D71DCE643F0006B194 /* Frameworks */,
+				C9D830D81DCE643F0006B194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9D830DD1DCE643F0006B194 /* PBXTargetDependency */,
+			);
+			name = SageruTests;
+			productName = SageruTests;
+			productReference = C9D830DA1DCE643F0006B194 /* SageruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9D830C81DCE643E0006B194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Araki Kenta";
+				TargetAttributes = {
+					C953F6271DCE65DF00F2D4BA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7YXY7GFCZF;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					C953F63A1DCE65E000F2D4BA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7YXY7GFCZF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C953F6271DCE65DF00F2D4BA;
+					};
+					C9D830D01DCE643E0006B194 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+					};
+					C9D830D91DCE643F0006B194 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7YXY7GFCZF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C9D830CB1DCE643E0006B194 /* Build configuration list for PBXProject "Sageru" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9D830C71DCE643E0006B194;
+			productRefGroup = C9D830D21DCE643E0006B194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C953F6271DCE65DF00F2D4BA /* Sageru-Sample */,
+				C9D830D01DCE643E0006B194 /* Sageru */,
+				C9D830D91DCE643F0006B194 /* SageruTests */,
+				C953F63A1DCE65E000F2D4BA /* Sageru-SampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C953F6261DCE65DF00F2D4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E6CEAD1DCE679C0099EA80 /* LaunchScreen.storyboard in Resources */,
+				C9E6CEA61DCE67800099EA80 /* Info.plist in Resources */,
+				C9E6CE9E1DCE67800099EA80 /* Assets.xcassets in Resources */,
+				C9E6CEAE1DCE679C0099EA80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C953F6391DCE65E000F2D4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D830CF1DCE643E0006B194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D830D81DCE643F0006B194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C953F6241DCE65DF00F2D4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E6CEA11DCE67800099EA80 /* FiveViewController.swift in Sources */,
+				C9E6CE9D1DCE67800099EA80 /* AppDelegate.swift in Sources */,
+				C9E6CEA21DCE67800099EA80 /* FourViewController.swift in Sources */,
+				C9E6CEA31DCE67800099EA80 /* OneViewController.swift in Sources */,
+				C9E6CEA41DCE67800099EA80 /* ThreeViewController.swift in Sources */,
+				C9E6CEA71DCE67800099EA80 /* NavigationController.swift in Sources */,
+				C9E6CEA81DCE67800099EA80 /* ViewController+setMenuAndTitle.swift in Sources */,
+				C9E6CEA51DCE67800099EA80 /* TwoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C953F6371DCE65E000F2D4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C953F6401DCE65E000F2D4BA /* Sageru_SampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D830CC1DCE643E0006B194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9458B751DD1603600596049 /* SageruContent.swift in Sources */,
+				C953F6141DCE64BE00F2D4BA /* Sageru.swift in Sources */,
+				C9458B731DD15AE200596049 /* SageruTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D830D61DCE643F0006B194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D830E01DCE643F0006B194 /* SageruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C953F63D1DCE65E000F2D4BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C953F6271DCE65DF00F2D4BA /* Sageru-Sample */;
+			targetProxy = C953F63C1DCE65E000F2D4BA /* PBXContainerItemProxy */;
+		};
+		C9D830DD1DCE643F0006B194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9D830D01DCE643E0006B194 /* Sageru */;
+			targetProxy = C9D830DC1DCE643F0006B194 /* PBXContainerItemProxy */;
+		};
+		C9E6CEB21DCE68960099EA80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9D830D01DCE643E0006B194 /* Sageru */;
+			targetProxy = C9E6CEB11DCE68960099EA80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9E6CEA91DCE679C0099EA80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E6CEAA1DCE679C0099EA80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9E6CEAB1DCE679C0099EA80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E6CEAC1DCE679C0099EA80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C953F64E1DCE65E000F2D4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 7YXY7GFCZF;
+				INFOPLIST_FILE = "Sageru-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.Sageru-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C953F64F1DCE65E000F2D4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 7YXY7GFCZF;
+				INFOPLIST_FILE = "Sageru-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.Sageru-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C953F6511DCE65E000F2D4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7YXY7GFCZF;
+				INFOPLIST_FILE = "Sageru-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.Sageru-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sageru-Sample.app/Sageru-Sample";
+			};
+			name = Debug;
+		};
+		C953F6521DCE65E000F2D4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7YXY7GFCZF;
+				INFOPLIST_FILE = "Sageru-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.Sageru-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sageru-Sample.app/Sageru-Sample";
+			};
+			name = Release;
+		};
+		C9D830E31DCE643F0006B194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9D830E41DCE643F0006B194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9D830E61DCE643F0006B194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sageru/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.Sageru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9D830E71DCE643F0006B194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sageru/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.Sageru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C9D830E91DCE643F0006B194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7YXY7GFCZF;
+				INFOPLIST_FILE = SageruTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.SageruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9D830EA1DCE643F0006B194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7YXY7GFCZF;
+				INFOPLIST_FILE = SageruTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Araki-Kenta.SageruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C953F64D1DCE65E000F2D4BA /* Build configuration list for PBXNativeTarget "Sageru-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C953F64E1DCE65E000F2D4BA /* Debug */,
+				C953F64F1DCE65E000F2D4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C953F6501DCE65E000F2D4BA /* Build configuration list for PBXNativeTarget "Sageru-SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C953F6511DCE65E000F2D4BA /* Debug */,
+				C953F6521DCE65E000F2D4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9D830CB1DCE643E0006B194 /* Build configuration list for PBXProject "Sageru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D830E31DCE643F0006B194 /* Debug */,
+				C9D830E41DCE643F0006B194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9D830E51DCE643F0006B194 /* Build configuration list for PBXNativeTarget "Sageru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D830E61DCE643F0006B194 /* Debug */,
+				C9D830E71DCE643F0006B194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9D830E81DCE643F0006B194 /* Build configuration list for PBXNativeTarget "SageruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D830E91DCE643F0006B194 /* Debug */,
+				C9D830EA1DCE643F0006B194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9D830C81DCE643E0006B194 /* Project object */;
+}
