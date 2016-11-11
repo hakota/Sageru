@@ -28,3 +28,10 @@ Run `carthage update`.
 ```bash
 $ carthage update
 ```
+## Licence
+
+[MIT](https://github.com/hakota/Sageru/blob/master/LICENSE)
+
+## Author
+
+[hakota](https://github.com/hakota)
