@@ -11,6 +11,7 @@ import UIKit
 // MARK: - SageruDelegate -
 public protocol SageruDelegate: NSObjectProtocol {
     func didChangeSageruState(sageru: Sageru, state: SageruState)
+    func didSelectCell(tableView: UITableView, indexPath: IndexPath)
 }
 
 // MARK: - State and Enums -
@@ -26,6 +27,15 @@ fileprivate struct SageruColor {
     static let orange = UIColor.rgb(r: 231, g: 114, b: 48, alpha: 1)
 }
 
+public struct Badge {
+    public var cellIndex: Int = 0
+    public var count: Int = 0
+    public init(cellIndex: Int, count: Int) {
+        self.cellIndex = cellIndex
+        self.count = count
+    }
+}
+
 open class Sageru: UIView {
     
     // MARK: - fileprivate settings -
@@ -38,6 +48,7 @@ open class Sageru: UIView {
     fileprivate var contentController: UIViewController?
     fileprivate var screenHeight: CGFloat = UIScreen.main.bounds.height
     fileprivate var screenWidth: CGFloat = UIScreen.main.bounds.width
+    
     fileprivate var backImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -46,11 +57,10 @@ open class Sageru: UIView {
     }()
     
     // MARK: - open settings -
-    
     // delegate
     weak open var delegate: SageruDelegate?
     
-    // gesture
+    // authorization
     open var panGestureEnable = true
     open var cellBottomLineEnable = true
     
@@ -89,6 +99,8 @@ open class Sageru: UIView {
             UIApplication.shared.delegate?.window??.backgroundColor = backgroundColor
         }
     }
+    
+    open var badges: [Badge] = [Badge(cellIndex:0, count:0)]
     
     // MARK: - initialize -
     override public init(frame: CGRect) {
@@ -161,10 +173,12 @@ open class Sageru: UIView {
                 && viewCenter.y <= (screenHeight/2 + height) - bounceOffset {
                 currentState = .pulling
                 viewCenter.y = abs(viewCenter.y + translation.y)
+                
                 if viewCenter.y >= screenHeight/2
                     && viewCenter.y <= (screenHeight/2 + height) - bounceOffset {
                     contentController.view.center = viewCenter
                 }
+                
                 panGesture.setTranslation(CGPoint.zero, in: contentController.view)
             }
             
@@ -256,6 +270,12 @@ extension Sageru: UITableViewDataSource {
             cell.titleLabel.text = content?.title
             cell.cellImage.image = content?.image?.withRenderingMode(.alwaysTemplate)
         }
+        
+        for badge in badges {
+            if badge.cellIndex == indexPath.row {
+                cell.setBadgeValue(value: badge.count)
+            }
+        }
         return cell
     }
 }
@@ -269,6 +289,7 @@ extension Sageru: UITableViewDelegate {
         selectedIndex = indexPath.row
         tableView.reloadData()
         let selectedItem = contents[indexPath.row - startIndex]
+        self.delegate?.didSelectCell(tableView: tableView, indexPath: indexPath)
         close(completion: selectedItem.completion)
     }
     

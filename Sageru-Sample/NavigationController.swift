@@ -50,6 +50,10 @@ class NavigationController: UINavigationController {
         sageru?.backgroundImage = UIImage(named: "backImage")
         sageru?.cellBottomLineEnable = false
         sageru?.delegate = self
+        sageru?.badges = [
+            Badge(cellIndex: 3, count: 50),
+            Badge(cellIndex: 4, count: 100)
+        ]
     }
     
     func showMenu() {
@@ -62,6 +66,7 @@ class NavigationController: UINavigationController {
 }
 
 extension NavigationController: SageruDelegate {
+    
     func didChangeSageruState(sageru: Sageru, state: SageruState) {
         switch state {
         case .shown:
@@ -71,5 +76,9 @@ extension NavigationController: SageruDelegate {
         default:
             return
         }
+    }
+    
+    func didSelectCell(tableView: UITableView, indexPath: IndexPath) {
+        print("select cell index row:", indexPath.row)
     }
 }
