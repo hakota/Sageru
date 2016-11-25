@@ -30,9 +30,12 @@ fileprivate struct SageruColor {
 public struct Badge {
     public var cellIndex: Int = 0
     public var count: Int = 0
-    public init(cellIndex: Int, count: Int) {
+    public var badgePattern: BadgePattern = .new
+
+    public init(cellIndex: Int, count: Int, badgePattern: BadgePattern = .new) {
         self.cellIndex = cellIndex
         self.count = count
+        self.badgePattern = badgePattern
     }
 }
 
@@ -101,6 +104,7 @@ open class Sageru: UIView {
     }
     
     open var badges: [Badge] = [Badge(cellIndex:0, count:0)]
+    open var badgeMaxLimit: Int = 100
     
     // MARK: - initialize -
     override public init(frame: CGRect) {
@@ -152,7 +156,8 @@ open class Sageru: UIView {
             open()
         }
     }
-    
+
+    // MARK: - events -
     open func panGestureEvent(on panGesture: UIPanGestureRecognizer) {
         
         if !panGestureEnable {
@@ -273,7 +278,7 @@ extension Sageru: UITableViewDataSource {
         
         for badge in badges {
             if badge.cellIndex == indexPath.row {
-                cell.setBadgeValue(value: badge.count)
+                cell.setBadgeValue(value: badge.count, maxValue: badgeMaxLimit, limitOver: badge.badgePattern)
             }
         }
         return cell
