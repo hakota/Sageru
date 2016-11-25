@@ -8,6 +8,11 @@
 
 import UIKit
 
+public enum BadgePattern {
+    case new
+    case plus
+}
+
 class SageruTableViewCell: UITableViewCell {
     
     open var selectLine: UIView = {
@@ -49,6 +54,8 @@ class SageruTableViewCell: UITableViewCell {
         label.isHidden = true
         label.layer.cornerRadius = 5.0
         label.layer.masksToBounds = true
+        label.minimumScaleFactor = 0.4
+        label.adjustsFontSizeToFitWidth = true
         return label
     }()
 
@@ -65,6 +72,8 @@ class SageruTableViewCell: UITableViewCell {
         contentView.addSubview(bottomLine)
         contentView.addSubview(badge)
     }
+
+    var cureentBadgePattern: BadgePattern?
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -76,24 +85,45 @@ class SageruTableViewCell: UITableViewCell {
         let margin: CGFloat = 4
         
         selectLine.frame = CGRect(x: margin, y: margin, width: 4, height: maxY-(margin*2))
-        cellImage.frame  = CGRect(x: selectLine.frame.maxX + margin*2, y: margin*3, width: maxY-(margin*6), height: maxY-(margin*6))
-        titleLabel.frame = CGRect(x: cellImage.frame.maxX + (margin*3), y: margin, width: maxX-(cellImage.frame.maxX + (margin*3)), height: maxY-(margin*2))
-        bottomLine.frame = CGRect(x: margin*6, y: maxY-0.5, width: maxX-(margin*12), height: 0.5)
-        badge.frame      = CGRect(x: titleLabel.frame.minX + (margin*3) + titleLabelToVary(label: titleLabel).width, y: 0, width: maxY/2, height: maxY/2)
+        cellImage.frame  = CGRect(x: selectLine.frame.maxX + margin*2,
+                                  y: margin*3,
+                                  width: maxY-(margin*6),
+                                  height: maxY-(margin*6))
+        titleLabel.frame = CGRect(x: cellImage.frame.maxX + (margin*3),
+                                  y: margin,
+                                  width: maxX-(cellImage.frame.maxX + (margin*3)),
+                                  height: maxY-(margin*2))
+        bottomLine.frame = CGRect(x: margin*6,
+                                  y: maxY-0.5,
+                                  width: maxX-(margin*12),
+                                  height: 0.5)
+        badge.frame      = CGRect(x: titleLabel.frame.minX + (margin*3) + titleLabelToVary(label: titleLabel).width,
+                                  y: 0,
+                                  width: titleLabelToVary(label: badge).width,
+                                  height: maxY/2)
         badge.center     = CGPoint(x: badge.center.x, y: titleLabel.center.y)
     }
     
-    func setBadgeValue(value: Int) {
+    func setBadgeValue(value: Int, maxValue: Int, limitOver: BadgePattern = .new) {
         if value <= 0 {
             badge.isHidden = true
             return
         }
-        var count: String = String(value)
-        if count.characters.count > 2 {
-            badge.text = "N"
+
+        let count: String = String(value)
+
+        if value >= maxValue {
+            if limitOver == .new {
+                badge.text = "New"
+                cureentBadgePattern = .new
+            } else if limitOver == .plus{
+                badge.text = String(maxValue) + " ＋"
+                cureentBadgePattern = .plus
+            }
             badge.isHidden = false
             return
         }
+
         badge.text = count
         badge.isHidden = false
     }

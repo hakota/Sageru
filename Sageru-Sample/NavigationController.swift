@@ -51,8 +51,9 @@ class NavigationController: UINavigationController {
         sageru?.cellBottomLineEnable = false
         sageru?.delegate = self
         sageru?.badges = [
-            Badge(cellIndex: 3, count: 50),
-            Badge(cellIndex: 4, count: 100)
+            Badge(cellIndex: 3, count: 50, badgePattern: .new),
+            Badge(cellIndex: 4, count: 1000, badgePattern: .plus),
+            Badge(cellIndex: 5, count: 1000, badgePattern: .new)
         ]
     }
     
