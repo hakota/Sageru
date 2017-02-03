@@ -80,6 +80,22 @@ extension NavigationController: SageruDelegate {
         print("select cell index row:", indexPath.row)
     }
 }
+```
+
+```
+import UIKit
+
+class OneViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setMenuAndTitle(titleText: "One", color: UIColor.white)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}
 
 extension UIViewController {
     func setMenuAndTitle(titleText: String, color: UIColor, image: UIImage = UIImage(named: "hamburger")!) {
@@ -101,7 +117,6 @@ extension UIViewController {
     }
 }
 ```
-
 
 ## Licence
 
