@@ -158,7 +158,7 @@ open class Sageru: UIView {
     }
 
     // MARK: - events -
-    open func panGestureEvent(on panGesture: UIPanGestureRecognizer) {
+    @objc open func panGestureEvent(on panGesture: UIPanGestureRecognizer) {
         
         if !panGestureEnable {
             return

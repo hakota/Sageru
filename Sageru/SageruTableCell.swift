@@ -132,7 +132,7 @@ class SageruTableViewCell: UITableViewCell {
         guard label.text != nil else {
             return CGSize(width: 0, height: 0)
         }
-        let width = label.text?.size(attributes: [NSFontAttributeName: UIFont(name: "HelveticaNeue-Light", size: 18)!])
+        let width = label.text?.size(withAttributes: [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Light", size: 18)!])
         return width!
     }
 }
